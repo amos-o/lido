@@ -1,9 +1,15 @@
 <!DOCTYPE html>
-<html>
-<head>
+<html ng-app="lido">
+  <head>
     <title>Lido: Take it Down</title>
-</head>
-<body>
+
+    <!-- Angular JS -->
+    <script src="../static/js/angular.min.js"></script>
+
+    <!-- App entry point for Angular JS -->
+    <script src="../static/app.js"></script>
+  </head>
+  <body>
     <!-- Firebase Scripts -->
     <script src="https://www.gstatic.com/firebasejs/live/3.0/firebase.js"></script>
     <script>
@@ -16,5 +22,5 @@
       };
       firebase.initializeApp(config);
     </script>
-</body>
+  </body>
 </html>
