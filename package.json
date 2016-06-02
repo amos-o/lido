@@ -1,0 +1,27 @@
+{
+  "name": "lido",
+  "version": "1.0.0",
+  "description": "An app that will remind you of something at a certain set time by sending you an email",
+  "main": "app.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/andela-aomondi/lido.git"
+  },
+  "keywords": [
+    "lido",
+    "memo"
+  ],
+  "author": "Amos Omondi",
+  "license": "GPL-3.0",
+  "bugs": {
+    "url": "https://github.com/andela-aomondi/lido/issues"
+  },
+  "homepage": "https://github.com/andela-aomondi/lido#readme",
+  "devDependencies": {
+    "gulp": "^3.9.1",
+    "gulp-sass": "^2.3.1"
+  }
+}
