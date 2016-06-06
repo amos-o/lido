@@ -1,1 +1,5 @@
-var app =  angular.module("lido", []);
+angular
+    .module("lido", [
+                        'ui.router',
+                        'ngMaterial'
+                    ]);

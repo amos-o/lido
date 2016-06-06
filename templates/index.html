@@ -1,30 +1,48 @@
 <!DOCTYPE html>
-<html ng-app="lido">
-  <head>
-    <title>Lido: Take it Down</title>
+<html ng-app="lido" lang="en">
+    <head>
+        <title>Lido: Take it Down</title>
 
-    <!-- Angular JS -->
-    <script src="../static/js/angular.min.js"></script>
+        <meta name="viewport" content="width=device-width, initial-scale=1">
 
-    <!-- App entry point for Angular JS -->
-    <script src="../static/app.js"></script>
+        <!-- Angular JS -->
+        <script src="../static/js/angular.min.js"></script>
 
-    <!-- Custom CSS -->
-    <link rel="stylesheet" href="../static/css/styles.css"/>
-  </head>
-  <body>
-    <h2>Silly h2</h2>
-    <!-- Firebase Scripts -->
-    <script src="https://www.gstatic.com/firebasejs/live/3.0/firebase.js"></script>
-    <script>
-      // Initialize Firebase
-      var config = {
-        apiKey: "AIzaSyAW5qeErh8apMgg9hF1gUBa5W40E92m8Ak",
-        authDomain: "lido-1c8cb.firebaseapp.com",
-        databaseURL: "https://lido-1c8cb.firebaseio.com",
-        storageBucket: "",
-      };
-      firebase.initializeApp(config);
-    </script>
+        <!-- UI Router -->
+        <script src="../static/js/angular-ui-router.min.js"></script>
+
+        <!-- Angular Material style sheet -->
+        <link rel="stylesheet" href="http://ajax.googleapis.com/ajax/libs/angular_material/1.1.0-rc2/angular-material.min.css">
+
+        <!-- Angular Material Extra Stuff -->
+        <script src="http://ajax.googleapis.com/ajax/libs/angularjs/1.5.3/angular-animate.min.js"></script>
+        <script src="http://ajax.googleapis.com/ajax/libs/angularjs/1.5.3/angular-aria.min.js"></script>
+        <script src="http://ajax.googleapis.com/ajax/libs/angularjs/1.5.3/angular-messages.min.js"></script>
+
+        <!-- Angular Material Library -->
+        <script src="http://ajax.googleapis.com/ajax/libs/angular_material/1.1.0-rc2/angular-material.min.js"></script>
+
+        <!-- App entry point for Angular JS -->
+        <script src="../static/app.js"></script>
+
+        <!-- Custom CSS -->
+        <link rel="stylesheet" href="../static/css/styles.css"/>
+    </head>
+    <body>
+        <div ui-view>
+        </div>
+
+        <!-- Firebase Scripts -->
+        <script src="https://www.gstatic.com/firebasejs/live/3.0/firebase.js"></script>
+        <script>
+            // Initialize Firebase
+            var config = {
+                apiKey: "AIzaSyAW5qeErh8apMgg9hF1gUBa5W40E92m8Ak",
+                authDomain: "lido-1c8cb.firebaseapp.com",
+                databaseURL: "https://lido-1c8cb.firebaseio.com",
+                storageBucket: "",
+            };
+            firebase.initializeApp(config);
+        </script>
   </body>
 </html>
