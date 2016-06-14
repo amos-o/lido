@@ -12,11 +12,11 @@ angular
             $stateProvider
                 .state('login', {
                     url: "/",
-                    templateUrl: "../templates/partials/login.html"
+                    templateUrl: "static/partials/login.html"
                 })
                 .state('lido', {
                     url: "/lido/",
-                    templateUrl: "../templates/partials/lido.html"
+                    templateUrl: "static/partials/lido.html"
                 });
         }
     ]);
