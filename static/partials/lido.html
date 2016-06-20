@@ -1,9 +1,16 @@
 <md-toolbar class="md-warn">
-    <div class="md-toolbar-tools">
-        <h2 class="md-flex">Lido</h2>
-    </div>
+  <div class="md-toolbar-tools">
+    <h2 class="md-flex">Lido</h2>
+  </div>
 </md-toolbar>
 
 <md-button class="md-raised md-primary md-hue-1">Click Me</md-button>
 
-<div ng-controller="MainPanelController"></div>
+<md-list ng-controller="DemoDialogController">
+  <md-list-item ng-repeat="user in users">
+    <div class="md-list-item-text" style="margin-bottom : 10px">
+      <i class="fa fa-trash" ng-click="delete(user)"></i>
+      {{user.firstName}} {{user.lastName}}
+    </div>
+  </md-list-item>
+</md-list>
